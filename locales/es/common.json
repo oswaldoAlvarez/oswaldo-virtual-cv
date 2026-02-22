@@ -1,0 +1,10 @@
+{
+  "brand": "Portafolio",
+  "projects": "Proyectos",
+  "darkMode": "Modo oscuro",
+  "whiteMode": "Modo blanco",
+  "loadingPortfolio": "Cargando portafolio...",
+  "errorTitle": "Ocurrió un error",
+  "errorDescription": "No pudimos cargar esta página en este momento.",
+  "retry": "Reintentar"
+}

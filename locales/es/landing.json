@@ -1,0 +1,122 @@
+{
+  "badge": "Desarrollador Frontend",
+  "title": "Hola, soy {{name}}",
+  "aboutTitle": "Acerca de mí",
+  "aboutText": "Desarrollador Web y Mobile con más de 6 años de experiencia en productos fintech, crypto y healthcare. Trabajé en la primera app mobile de InvertirOnline con React Native y lideré el desarrollo de RipioTrade desde cero, acompañando al equipo en la migración desde tecnologías nativas. Disfruto trabajar en equipo, compartir conocimiento y aportar valor en entornos de alto rendimiento. Tengo experiencia colaborando con equipos multiculturales. Busco soluciones simples para problemas no tan simples.",
+  "bioFallback": "Construyo productos web y móviles enfocados en rendimiento, escalabilidad y una UX limpia.",
+  "githubCta": "Ver GitHub",
+  "linkedinCta": "Ver LinkedIn",
+  "stats": {
+    "publicRepos": "Repositorios públicos",
+    "followers": "Seguidores",
+    "following": "Siguiendo",
+    "location": "Ubicación"
+  },
+  "skillsTitle": "Stack tecnológico",
+  "skills": {
+    "items": [
+      { "label": "React Native" },
+      { "label": "React (Hooks)" },
+      { "label": "TypeScript" },
+      { "label": "Next.js" },
+      { "label": "JavaScript" },
+      { "label": "Git (GitHub / GitLab)" },
+      { "label": "Atomic Design" },
+      { "label": "Storybook" },
+      { "label": "React Query" },
+      { "label": "WebSocket" },
+      { "label": "Tailwind CSS" }
+    ]
+  },
+  "experienceTitle": "Experiencia laboral",
+  "projectsTitle": "Proyectos",
+  "projectFallback": "Este repositorio aún no tiene descripción.",
+  "publishedOn": "Publicado",
+  "stars": "Estrellas",
+  "lastUpdate": "Última actualización",
+  "viewRepo": "Repositorio",
+  "viewDemo": "Demo",
+  "experience": {
+    "items": [
+      {
+        "company": "Estable IO",
+        "role": "React / React Native Developer",
+        "period": "ago. 2025 - actualidad",
+        "location": "España · Remoto",
+        "summary": "Desarrollo y mantenimiento de productos cripto con ownership end-to-end.",
+        "highlights": [
+          "Wallet: mantenimiento y nuevas features para comprar, vender, convertir y enviar crypto.",
+          "IPP: MVP greenfield creado desde cero con implementación de funcionalidades end-to-end."
+        ]
+      },
+      {
+        "company": "Freelance",
+        "role": "React Native Developer",
+        "period": "abr. 2025 - may. 2025",
+        "location": "España · Remoto",
+        "summary": "Entrega de productos mobile en contratos temporales.",
+        "highlights": [
+          "PadelPool: construcción de la app desde cero.",
+          "InvertyApp: implementación del rebranding completo."
+        ]
+      },
+      {
+        "company": "Ripio",
+        "role": "React Native Developer",
+        "period": "abr. 2022 - ene. 2025",
+        "location": "Remoto",
+        "summary": "Desarrollo y mantenimiento en iniciativas clave de Ripio Wallet.",
+        "highlights": [
+          "TAG: feature para enviar y recibir crypto por TAG.",
+          "Access/Core: KYC, flujos de acceso, resolución de bugs y nuevas funcionalidades.",
+          "DesignOps: creación de Himalaya Design System como librería de componentes.",
+          "RipioTrade: implementación de 0 a 100 con integración a BitcoinTrade."
+        ]
+      },
+      {
+        "company": "Reba",
+        "role": "React / React Native Developer",
+        "period": "nov. 2021 - mar. 2022",
+        "location": "Argentina · Remoto",
+        "summary": "Desarrollo React Native en áreas de producto fintech.",
+        "highlights": [
+          "Creación y mantenimiento en el capítulo de Inversiones y Transacciones.",
+          "Construcción y mantenimiento del módulo crypto en la app de Reba."
+        ]
+      },
+      {
+        "company": "IOL invertironline",
+        "role": "React / React Native Developer",
+        "period": "feb. 2021 - nov. 2021",
+        "location": "Argentina · Remoto",
+        "summary": "Entrega de features mobile y web en productos internos y de usuarios.",
+        "highlights": [
+          "Creación desde cero de funcionalidades de IOL mobile con React Native.",
+          "Mantenimiento de apps internas en React y componentes reutilizables.",
+          "Gestión de requerimientos de sprint, refactors e issues con Scrum/Jira."
+        ]
+      },
+      {
+        "company": "Claro Argentina",
+        "role": "React Developer",
+        "period": "oct. 2020 - feb. 2021",
+        "location": "Argentina · Remoto",
+        "summary": "Análisis de sistemas y desarrollo frontend.",
+        "highlights": [
+          "Rol de analista de sistemas y desarrollador React."
+        ]
+      },
+      {
+        "company": "UMA Health AI",
+        "role": "React Developer",
+        "period": "dic. 2019 - oct. 2020",
+        "location": "Argentina · Híbrido",
+        "summary": "Desarrollo y mantenimiento de requerimientos para plataforma de salud.",
+        "highlights": [
+          "Armado de wireframes e implementación de requerimientos.",
+          "Soporte y mantenimiento de la aplicación en producción."
+        ]
+      }
+    ]
+  }
+}
