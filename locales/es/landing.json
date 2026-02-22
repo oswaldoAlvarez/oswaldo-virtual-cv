@@ -15,17 +15,31 @@
   "skillsTitle": "Stack tecnológico",
   "skills": {
     "items": [
-      { "label": "React Native" },
-      { "label": "React (Hooks)" },
-      { "label": "TypeScript" },
-      { "label": "Next.js" },
       { "label": "JavaScript" },
-      { "label": "Git (GitHub / GitLab)" },
-      { "label": "Atomic Design" },
-      { "label": "Storybook" },
-      { "label": "React Query" },
+      { "label": "TypeScript" },
+      { "label": "React (Hooks)" },
+      { "label": "Next.js" },
+      { "label": "React Native" },
       { "label": "WebSocket" },
-      { "label": "Tailwind CSS" }
+
+      { "label": "Redux Toolkit" },
+      { "label": "Redux" },
+      { "label": "Zustand" },
+      { "label": "TanStack Query" },
+      { "label": "Axios" },
+
+      { "label": "Jest" },
+      { "label": "React Testing Library" },
+
+      { "label": "HTML5" },
+      { "label": "CSS3" },
+      { "label": "Sass" },
+      { "label": "Tailwind CSS" },
+      { "label": "Atomic Design" },
+
+      { "label": "Storybook" },
+      { "label": "Git (GitHub / GitLab)" },
+      { "label": "Scrum / Jira" }
     ]
   },
   "experienceTitle": "Experiencia laboral",
