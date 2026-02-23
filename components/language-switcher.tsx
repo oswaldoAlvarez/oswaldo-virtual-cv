@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ButtonLink } from "@/components/ui/button";
 import { type AppLanguage, languages } from "@/i18n/settings";
 
 type LanguageSwitcherProps = {
@@ -26,11 +26,8 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
   const label = currentLanguage === "es" ? "English" : "Español";
 
   return (
-    <Link
-      href={href}
-      className="portfolio-btn-secondary rounded-full px-4 py-2 text-sm font-semibold transition"
-    >
+    <ButtonLink href={href} size="md" variant="secondary">
       {label}
-    </Link>
+    </ButtonLink>
   );
 }

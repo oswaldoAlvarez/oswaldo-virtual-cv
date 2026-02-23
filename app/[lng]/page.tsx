@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { ButtonLink } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Heading, Text } from "@/components/ui/typography";
 import { getGithubProfile, getGithubProjects } from "@/lib/github";
 import { getTranslation } from "@/i18n/server";
 import { isSupportedLanguage, languages } from "@/i18n/settings";
@@ -75,46 +78,54 @@ export default async function Home({ params }: PageProps) {
       <main className="mx-auto flex w-full max-w-6xl flex-col px-6 py-14 sm:px-10">
         <header className="mb-16 flex items-center justify-end">
           <div className="flex flex-wrap items-center justify-end gap-3">
-            <a
-              href="#projects"
-              className="portfolio-btn-secondary rounded-full px-4 py-2 text-sm font-semibold transition"
-            >
+            <ButtonLink href="#projects" size="md" variant="secondary">
               {t("common:projects")}
-            </a>
+            </ButtonLink>
             <ThemeSwitcher />
             <LanguageSwitcher currentLanguage={lng} />
           </div>
         </header>
 
-        <section className="portfolio-card mb-16 grid gap-8 rounded-2xl p-6 md:grid-cols-[1fr_240px] md:items-center">
+        <Card
+          as="section"
+          radius="xl"
+          size="lg"
+          className="mb-16 grid gap-8 md:grid-cols-[1fr_240px] md:items-center"
+        >
           <div>
-            <p className="portfolio-badge mb-3 inline-block rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-300">
+            <Text
+              as="span"
+              variant="caption"
+              className="portfolio-badge mb-3 inline-block rounded-full bg-emerald-500/20 px-3 py-1 font-semibold text-emerald-300"
+            >
               {t("landing:badge")}
-            </p>
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
+            </Text>
+            <Heading as="h1" variant="hero" className="mb-4">
               {t("landing:title", { name: profile.name })}
-            </h1>
-            <h2 className="mb-2 text-lg font-semibold text-emerald-300">
+            </Heading>
+            <Heading as="h2" variant="card" className="mb-2 text-emerald-300">
               {t("landing:aboutTitle")}
-            </h2>
-            <p className="mb-6 max-w-2xl text-slate-300">{t("landing:aboutText")}</p>
+            </Heading>
+            <Text className="mb-6 max-w-2xl">{t("landing:aboutText")}</Text>
             <div className="flex flex-wrap gap-3">
-              <a
+              <ButtonLink
                 href={profile.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+                size="md"
+                variant="primary"
               >
                 {t("landing:githubCta")}
-              </a>
-              <a
+              </ButtonLink>
+              <ButtonLink
                 href={profile.blogUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="portfolio-btn-secondary rounded-full px-5 py-3 text-sm font-semibold transition"
+                size="md"
+                variant="secondary"
               >
                 {t("landing:linkedinCta")}
-              </a>
+              </ButtonLink>
             </div>
           </div>
 
@@ -127,29 +138,39 @@ export default async function Home({ params }: PageProps) {
               className="aspect-square w-full rounded-2xl border border-slate-700 object-cover"
             />
           </div>
-        </section>
+        </Card>
 
         <section className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <article className="portfolio-card rounded-xl p-4">
-            <p className="text-2xl font-bold">{profile.publicRepos}</p>
-            <p className="text-xs text-slate-400">{t("landing:stats.publicRepos")}</p>
-          </article>
-          <article className="portfolio-card rounded-xl p-4">
-            <p className="text-2xl font-bold">{profile.followers}</p>
-            <p className="text-xs text-slate-400">{t("landing:stats.followers")}</p>
-          </article>
-          <article className="portfolio-card rounded-xl p-4">
-            <p className="text-2xl font-bold">{profile.following}</p>
-            <p className="text-xs text-slate-400">{t("landing:stats.following")}</p>
-          </article>
-          <article className="portfolio-card rounded-xl p-4">
-            <p className="text-2xl font-bold">{profile.location || "-"}</p>
-            <p className="text-xs text-slate-400">{t("landing:stats.location")}</p>
-          </article>
+          <Card radius="lg" size="md">
+            <Heading as="h3" variant="section">
+              {profile.publicRepos}
+            </Heading>
+            <Text variant="muted">{t("landing:stats.publicRepos")}</Text>
+          </Card>
+          <Card radius="lg" size="md">
+            <Heading as="h3" variant="section">
+              {profile.followers}
+            </Heading>
+            <Text variant="muted">{t("landing:stats.followers")}</Text>
+          </Card>
+          <Card radius="lg" size="md">
+            <Heading as="h3" variant="section">
+              {profile.following}
+            </Heading>
+            <Text variant="muted">{t("landing:stats.following")}</Text>
+          </Card>
+          <Card radius="lg" size="md">
+            <Heading as="h3" variant="section">
+              {profile.location || "-"}
+            </Heading>
+            <Text variant="muted">{t("landing:stats.location")}</Text>
+          </Card>
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-5 text-2xl font-bold">{t("landing:skillsTitle")}</h2>
+          <Heading as="h2" variant="section" className="mb-5">
+            {t("landing:skillsTitle")}
+          </Heading>
           <div className="flex flex-wrap gap-2">
             {skillsData.map((skill) => (
               <span
@@ -163,83 +184,97 @@ export default async function Home({ params }: PageProps) {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-6 text-2xl font-bold">{t("landing:experienceTitle")}</h2>
+          <Heading as="h2" variant="section" className="mb-6">
+            {t("landing:experienceTitle")}
+          </Heading>
           <div className="grid gap-4">
             {experienceData.map((item) => (
-              <article
-                key={`${item.company}-${item.role}`}
-                className="portfolio-card rounded-2xl p-5"
-              >
+              <Card key={`${item.company}-${item.role}`}>
                 <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-                  <h3 className="text-lg font-semibold">{item.role}</h3>
-                  <span className="text-xs text-slate-400">{item.period}</span>
+                  <Heading as="h3" variant="card">
+                    {item.role}
+                  </Heading>
+                  <Text as="span" variant="muted">
+                    {item.period}
+                  </Text>
                 </div>
-                <p className="portfolio-company mb-2 text-sm font-medium text-emerald-300">
+                <Text className="portfolio-company mb-2" variant="label">
                   {item.company}
-                </p>
-                <p className="mb-2 text-xs text-slate-400">{item.location}</p>
-                <p className="mb-3 text-sm text-slate-300">{item.summary}</p>
-                <ul className="space-y-1 text-sm text-slate-300">
+                </Text>
+                <Text className="mb-2" variant="muted">
+                  {item.location}
+                </Text>
+                <Text className="mb-3">{item.summary}</Text>
+                <ul className="space-y-1">
                   {item.highlights.map((highlight) => (
-                    <li key={highlight}>- {highlight}</li>
+                    <Text as="li" key={highlight}>
+                      - {highlight}
+                    </Text>
                   ))}
                 </ul>
-              </article>
+              </Card>
             ))}
           </div>
         </section>
 
         <section id="projects" className="mb-6">
-          <h2 className="mb-6 text-2xl font-bold">{t("landing:projectsTitle")}</h2>
+          <Heading as="h2" variant="section" className="mb-6">
+            {t("landing:projectsTitle")}
+          </Heading>
           <div className="grid gap-4 md:grid-cols-2">
             {projects.map((project) => (
-              <article
-                key={project.githubUrl}
-                className="portfolio-card rounded-2xl p-5"
-              >
+              <Card key={project.githubUrl}>
                 <div className="mb-3 flex items-start justify-between gap-2">
-                  <h3 className="text-lg font-semibold">{project.name}</h3>
-                  <span className="rounded-full bg-slate-800 px-2 py-1 text-xs text-slate-300">
+                  <Heading as="h3" variant="card">
+                    {project.name}
+                  </Heading>
+                  <Text
+                    as="span"
+                    variant="caption"
+                    className="rounded-full bg-slate-800 px-2 py-1"
+                  >
                     {project.language}
-                  </span>
+                  </Text>
                 </div>
-                <p className="mb-4 min-h-10 text-sm text-slate-300">
+                <Text className="mb-4 min-h-10">
                   {project.description || t("landing:projectFallback")}
-                </p>
-                <div className="mb-4 flex items-center gap-4 text-xs text-slate-400">
-                  <span>
+                </Text>
+                <div className="mb-4 flex items-center gap-4">
+                  <Text as="span" variant="muted">
                     {t("landing:publishedOn")}:{" "}
                     {new Date(project.createdAt).toLocaleDateString(lng)}
-                  </span>
-                  <span>
+                  </Text>
+                  <Text as="span" variant="muted">
                     {t("landing:stars")}: {project.stars}
-                  </span>
-                  <span>
+                  </Text>
+                  <Text as="span" variant="muted">
                     {t("landing:lastUpdate")}:{" "}
                     {new Date(project.pushedAt).toLocaleDateString(lng)}
-                  </span>
+                  </Text>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <a
+                  <ButtonLink
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-emerald-500 px-4 py-2 text-xs font-semibold text-slate-950 transition hover:bg-emerald-400"
+                    size="sm"
+                    variant="primary"
                   >
                     {t("landing:viewRepo")}
-                  </a>
+                  </ButtonLink>
                   {project.demoUrl ? (
-                    <a
+                    <ButtonLink
                       href={project.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="portfolio-btn-secondary rounded-full px-4 py-2 text-xs font-semibold transition"
+                      size="sm"
+                      variant="secondary"
                     >
                       {t("landing:viewDemo")}
-                    </a>
+                    </ButtonLink>
                   ) : null}
                 </div>
-              </article>
+              </Card>
             ))}
           </div>
         </section>
