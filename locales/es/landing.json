@@ -20,6 +20,9 @@
       { "label": "React (Hooks)" },
       { "label": "Next.js" },
       { "label": "React Native" },
+      { "label": "Agents / Multi-Agents / Skills" },
+      { "label": "RAG" },
+      { "label": "MCP" },
       { "label": "WebSocket" },
 
       { "label": "Redux Toolkit" },
