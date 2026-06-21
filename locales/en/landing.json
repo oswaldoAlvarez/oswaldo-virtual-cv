@@ -53,25 +53,25 @@
   "experience": {
     "items": [
       {
-        "company": "Estable IO",
-        "role": "React / React Native Developer",
-        "period": "Aug 2025 - Present",
-        "location": "Spain · Remote",
-        "summary": "Building and maintaining crypto products with end-to-end feature ownership.",
+        "company": "Freelance (Self employed)",
+        "role": "React / React Native / AI Engineer",
+        "period": "Mar 2026 - Present · 4 mos",
+        "location": "Remote",
+        "summary": "Building web, mobile, and AI-powered solutions as a freelancer.",
         "highlights": [
-          "Wallet: maintenance and new features to buy, sell, convert, and send crypto.",
-          "IPP: new greenfield MVP built from scratch with end-to-end implementation."
+          "React, React Native, and AI engineering.",
+          "End-to-end delivery for digital products."
         ]
       },
       {
-        "company": "Freelance",
-        "role": "React Native Developer",
-        "period": "Apr 2025 - May 2025",
-        "location": "Spain · Remote",
-        "summary": "Delivered mobile products in short-term contracts.",
+        "company": "Estable IO · Full-time",
+        "role": "React / React Native / AI Engineer",
+        "period": "Aug 2025 - Feb 2026 · 7 mos",
+        "location": "Remote",
+        "summary": "I have been working on:",
         "highlights": [
-          "PadelPool: built the app from scratch.",
-          "InvertyApp: executed full app rebranding."
+          "Wallet: maintenance and new features to buy, sell, convert, and send crypto.",
+          "IPP: new greenfield MVP built from scratch with end-to-end implementation."
         ]
       },
       {
