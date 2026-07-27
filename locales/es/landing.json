@@ -1,8 +1,8 @@
 {
-  "badge": "Desarrollador Frontend",
+  "badge": "AI Engineer · React · React Native",
   "title": "Hola, soy {{name}}",
   "aboutTitle": "Acerca de mí",
-  "aboutText": "Desarrollador Web y Mobile con más de 6 años de experiencia en productos fintech, crypto y healthcare. Trabajé en la primera app mobile de InvertirOnline con React Native y lideré el desarrollo de RipioTrade desde cero, acompañando al equipo en la migración desde tecnologías nativas. Disfruto trabajar en equipo, compartir conocimiento y aportar valor en entornos de alto rendimiento. Tengo experiencia colaborando con equipos multiculturales. Busco soluciones simples para problemas no tan simples.",
+  "aboutText": "AI Engineer y desarrollador React / React Native / Next.js con más de 6 años de experiencia construyendo productos web y mobile en fintech, crypto y plataformas digitales. Trabajo en aplicaciones productivas, proyectos greenfield, implementación end-to-end de funcionalidades y flujos de ingeniería asistidos por IA usando LLMs, RAG y herramientas agenticas. Disfruto colaborar con equipos de producto, diseño e ingeniería para resolver problemas prácticos y entregar software útil.",
   "bioFallback": "Construyo productos web y móviles enfocados en rendimiento, escalabilidad y una UX limpia.",
   "githubCta": "Ver GitHub",
   "linkedinCta": "Ver LinkedIn",
@@ -57,32 +57,26 @@
     "items": [
       {
         "company": "Freelance (Self employed)",
-        "role": "React / React Native / AI Engineer",
-        "period": "mar. 2026 - actualidad · 4 meses",
+        "role": "React / React Native / Next.js / AI Engineer | Freelance - Contractor",
+        "period": "abr. 2025 - actualidad · 1 año 4 meses",
         "location": "En remoto",
-        "summary": "Desarrollo de productos web, mobile y soluciones con IA en modalidad freelance.",
+        "summary": "Trabajo como React, React Native, Next.js y AI Engineer independiente, colaborando con compañías de fintech, crypto y productos digitales.",
         "highlights": [
-          "React, React Native y AI engineering.",
-          "Entrega de soluciones end-to-end para productos digitales."
-        ]
-      },
-      {
-        "company": "Estable IO · Jornada completa",
-        "role": "React / React Native / AI Engineer",
-        "period": "ago. 2025 - feb. 2026 · 7 meses",
-        "location": "En remoto",
-        "summary": "I have been working on:",
-        "highlights": [
-          "Wallet: mantenimiento y nuevas features para comprar, vender, convertir y enviar crypto.",
-          "IPP: MVP greenfield creado desde cero con implementación de funcionalidades end-to-end."
+          "Contribuyo al desarrollo de aplicaciones mobile y web, desde proyectos greenfield e implementación end-to-end de funcionalidades hasta mantenimiento y mejora de aplicaciones en producción.",
+          "Aplico flujos de ingeniería asistidos por IA y exploro la integración de capacidades con IA para acelerar desarrollo, mejorar la resolución de problemas y apoyar la experimentación de producto.",
+          "BITNOVO / BITSA: mantenimiento y desarrollo de nuevas funcionalidades para Bitnovo Wallet y la aplicación principal de Bitsa en distintas áreas del producto.",
+          "STABLE.IO: mantenimiento de Wallet y desarrollo de funcionalidades para comprar, vender, convertir y enviar criptomonedas; IPP como MVP greenfield construido desde cero con implementación end-to-end.",
+          "RECODME: contribución en la construcción de PadelPool mobile app desde cero y trabajo en el rebranding completo de InvertyApp y su nueva experiencia de usuario.",
+          "BANCO EXTERIOR VENEZUELA: consultoría en React, Next.js y React Native.",
+          "Tecnologías principales: React Native, React, TypeScript, JavaScript, TanStack Query, REST APIs, Axios, Redux, Zustand, LLM, RAG, Firebase, Next.js, Git y GitHub."
         ]
       },
       {
         "company": "Ripio",
         "role": "React Native Developer",
-        "period": "abr. 2022 - ene. 2025",
+        "period": "abr. 2022 - ene. 2025 · 2 años 10 meses",
         "location": "Remoto",
-        "summary": "Desarrollo y mantenimiento en iniciativas clave de Ripio Wallet.",
+        "summary": "Desarrollo y mantenimiento de productos mobile de Ripio e iniciativas de wallet.",
         "highlights": [
           "TAG: feature para enviar y recibir crypto por TAG.",
           "Access/Core: KYC, flujos de acceso, resolución de bugs y nuevas funcionalidades.",
@@ -93,7 +87,7 @@
       {
         "company": "Reba",
         "role": "React / React Native Developer",
-        "period": "nov. 2021 - mar. 2022",
+        "period": "nov. 2021 - mar. 2022 · 5 meses",
         "location": "Argentina · Remoto",
         "summary": "Desarrollo React Native en áreas de producto fintech.",
         "highlights": [
@@ -104,7 +98,7 @@
       {
         "company": "IOL invertironline",
         "role": "React / React Native Developer",
-        "period": "feb. 2021 - nov. 2021",
+        "period": "feb. 2021 - nov. 2021 · 10 meses",
         "location": "Argentina · Remoto",
         "summary": "Entrega de features mobile y web en productos internos y de usuarios.",
         "highlights": [
