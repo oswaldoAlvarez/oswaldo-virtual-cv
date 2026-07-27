@@ -27,6 +27,40 @@ type SkillsItem = {
   label: string;
 };
 
+const clientLabelPattern = /^[A-Z0-9 .\/&-]+$/;
+
+function formatHighlight(highlight: string) {
+  const separatorIndex = highlight.indexOf(":");
+
+  if (separatorIndex < 1) {
+    return highlight;
+  }
+
+  const label = highlight.slice(0, separatorIndex);
+  const rest = highlight.slice(separatorIndex);
+  const isShortLabel = label.length <= 42;
+  const isClientLabel = clientLabelPattern.test(label);
+
+  if (!isShortLabel) {
+    return highlight;
+  }
+
+  return (
+    <>
+      <strong
+        className={
+          isClientLabel
+            ? "portfolio-highlight-label portfolio-client-name"
+            : "portfolio-highlight-label"
+        }
+      >
+        {isClientLabel ? <em>{label}</em> : label}
+      </strong>
+      {rest}
+    </>
+  );
+}
+
 export function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
@@ -188,27 +222,38 @@ export default async function Home({ params }: PageProps) {
             {t("landing:experienceTitle")}
           </Heading>
           <div className="grid gap-4">
-            {experienceData.map((item) => (
-              <Card key={`${item.company}-${item.role}`}>
-                <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-                  <Heading as="h3" variant="card">
-                    {item.role}
-                  </Heading>
-                  <Text as="span" variant="muted">
+            {experienceData.map((item, index) => (
+              <Card
+                key={`${item.company}-${item.role}`}
+                className={
+                  index === 0
+                    ? "portfolio-experience-card portfolio-experience-card-featured"
+                    : "portfolio-experience-card"
+                }
+              >
+                <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <Heading as="h3" variant="card" className="leading-snug">
+                      {item.role}
+                    </Heading>
+                    <Text className="portfolio-company mt-2" variant="label">
+                      {item.company}
+                    </Text>
+                  </div>
+                  <Text as="span" className="portfolio-period" variant="muted">
                     {item.period}
                   </Text>
                 </div>
-                <Text className="portfolio-company mb-2" variant="label">
-                  {item.company}
-                </Text>
-                <Text className="mb-2" variant="muted">
+                <Text className="mb-3" variant="muted">
                   {item.location}
                 </Text>
-                <Text className="mb-3">{item.summary}</Text>
-                <ul className="space-y-1">
+                <Text className="portfolio-experience-summary mb-4">
+                  {item.summary}
+                </Text>
+                <ul className="portfolio-highlight-list space-y-2">
                   {item.highlights.map((highlight) => (
-                    <Text as="li" key={highlight}>
-                      - {highlight}
+                    <Text as="li" className="portfolio-highlight-item" key={highlight}>
+                      {formatHighlight(highlight)}
                     </Text>
                   ))}
                 </ul>
