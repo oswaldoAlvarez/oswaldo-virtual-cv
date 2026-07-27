@@ -207,12 +207,11 @@ body {
 }
 
 .portfolio-highlight-label {
-  color: #e2e8f0;
+  color: #99f6e4;
   font-weight: 800;
 }
 
 .portfolio-client-name {
-  color: #99f6e4;
   letter-spacing: 0.035em;
 }
 
@@ -309,10 +308,6 @@ body {
 }
 
 :root[data-theme="light"] .portfolio-highlight-label {
-  color: #0f172a;
-}
-
-:root[data-theme="light"] .portfolio-client-name {
   color: #047857;
 }
 
