@@ -27,7 +27,12 @@ type SkillsItem = {
   label: string;
 };
 
-const clientLabelPattern = /^[A-Z0-9 .\/&-]+$/;
+const clientLabels = new Set([
+  "BITNOVO / BITSA",
+  "STABLE.IO",
+  "RECODME",
+  "BANCO EXTERIOR VENEZUELA",
+]);
 
 function formatHighlight(highlight: string) {
   const separatorIndex = highlight.indexOf(":");
@@ -39,7 +44,7 @@ function formatHighlight(highlight: string) {
   const label = highlight.slice(0, separatorIndex);
   const rest = highlight.slice(separatorIndex);
   const isShortLabel = label.length <= 42;
-  const isClientLabel = clientLabelPattern.test(label);
+  const isClientLabel = clientLabels.has(label);
 
   if (!isShortLabel) {
     return highlight;
