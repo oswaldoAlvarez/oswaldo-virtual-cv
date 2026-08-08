@@ -77,7 +77,7 @@ export function ButtonLink({
         rel={rel}
         target={target}
         className={joinClassNames(
-          "rounded-full transition",
+          "inline-flex items-center justify-center rounded-full text-center transition",
           variantClass[variant],
           sizeClass[size],
           className,
@@ -92,7 +92,7 @@ export function ButtonLink({
     <Link
       href={href}
       className={joinClassNames(
-        "rounded-full transition",
+        "inline-flex items-center justify-center rounded-full text-center transition",
         variantClass[variant],
         sizeClass[size],
         className,

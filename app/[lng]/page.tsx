@@ -111,6 +111,7 @@ export default async function Home({ params }: PageProps) {
   const skillsData = t("landing:skills.items", {
     returnObjects: true,
   }) as unknown as SkillsItem[];
+  const aboutParagraphs = t("landing:aboutText").split(/\n\s*\n/);
 
   return (
     <div className="portfolio-bg min-h-screen text-slate-100">
@@ -145,9 +146,14 @@ export default async function Home({ params }: PageProps) {
             <Heading as="h2" variant="card" className="mb-2 text-emerald-300">
               {t("landing:aboutTitle")}
             </Heading>
-            <Text className="mb-6 max-w-2xl">{t("landing:aboutText")}</Text>
-            <div className="flex flex-wrap gap-3">
+            <div className="mb-6 max-w-2xl space-y-3">
+              {aboutParagraphs.map((paragraph) => (
+                <Text key={paragraph}>{paragraph}</Text>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 gap-3 min-[360px]:grid-cols-2 sm:flex sm:flex-wrap">
               <ButtonLink
+                className="w-full sm:w-auto"
                 href={profile.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -157,6 +163,7 @@ export default async function Home({ params }: PageProps) {
                 {t("landing:githubCta")}
               </ButtonLink>
               <ButtonLink
+                className="w-full sm:w-auto"
                 href={profile.blogUrl}
                 target="_blank"
                 rel="noopener noreferrer"

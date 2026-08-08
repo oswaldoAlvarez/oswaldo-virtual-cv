@@ -2,7 +2,7 @@
   "badge": "AI Engineer · React · React Native",
   "title": "Hola, soy {{name}}",
   "aboutTitle": "Acerca de mí",
-  "aboutText": "Frontend and Mobile Engineer con más de 6 años de experiencia construyendo productos fintech, crypto y digitales en web y mobile usando React, React Native, Next.js y TypeScript. Actualmente trabajo como Freelance Contractor, colaborando con compañías en aplicaciones productivas, productos greenfield e implementación end-to-end de funcionalidades. Uso flujos de ingeniería asistidos por IA para investigación técnica, implementación, refactoring, testing, documentación y prototipado rápido, revisando siempre el resultado final para asegurar calidad y mantenibilidad.",
+  "aboutText": "Frontend y Mobile Engineer con más de 6 años de experiencia construyendo productos fintech, crypto y digitales en web y mobile usando React, React Native, Next.js y TypeScript. Actualmente trabajo como Freelance-Contractor, colaborando con compañías en aplicaciones productivas, productos greenfield e implementación end-to-end de funcionalidades.\n\nUso flujos de ingeniería asistidos por IA para investigación técnica, implementación, refactoring, testing, documentación y prototipado rápido, revisando siempre el resultado final para asegurar calidad y mantenibilidad.",
   "bioFallback": "Construyo productos web y móviles enfocados en rendimiento, escalabilidad y una UX limpia.",
   "githubCta": "Ver GitHub",
   "linkedinCta": "Ver LinkedIn",
@@ -110,7 +110,7 @@
       {
         "company": "Claro Argentina",
         "role": "React Developer",
-        "period": "oct. 2020 - feb. 2021",
+        "period": "oct. 2020 - feb. 2021 · 5 meses",
         "location": "Argentina · Remoto",
         "summary": "Análisis de sistemas y desarrollo frontend.",
         "highlights": [
@@ -120,7 +120,7 @@
       {
         "company": "UMA Health AI",
         "role": "React Developer",
-        "period": "dic. 2019 - oct. 2020",
+        "period": "dic. 2019 - oct. 2020 · 11 meses",
         "location": "Argentina · Híbrido",
         "summary": "Desarrollo y mantenimiento de requerimientos para plataforma de salud.",
         "highlights": [
