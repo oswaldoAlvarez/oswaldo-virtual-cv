@@ -2,7 +2,7 @@
   "badge": "AI Engineer · React · React Native",
   "title": "Hi, I'm {{name}}",
   "aboutTitle": "About me",
-  "aboutText": "Frontend and Mobile Engineer with 6+ years of experience building fintech, crypto and digital products across web and mobile using React, React Native, Next.js and TypeScript. Currently working as a Freelance Contractor, I collaborate with companies on production applications, greenfield products and end-to-end feature delivery. I use AI-assisted engineering workflows for technical research, implementation, refactoring, testing, documentation and rapid prototyping, always reviewing the final output for quality and maintainability.",
+  "aboutText": "Frontend and Mobile Engineer with 6+ years of experience building fintech, crypto and digital products across web and mobile using React, React Native, Next.js and TypeScript. Currently working as a Freelance-Contractor, I collaborate with companies on production applications, greenfield products and end-to-end feature delivery.\n\nI use AI-assisted engineering workflows for technical research, implementation, refactoring, testing, documentation and rapid prototyping, always reviewing the final output for quality and maintainability.",
   "bioFallback": "I build web and mobile products focused on performance, scalability, and clean UX.",
   "githubCta": "View GitHub",
   "linkedinCta": "View LinkedIn",
