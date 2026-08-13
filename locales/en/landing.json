@@ -15,34 +15,78 @@
   "skillsTitle": "Tech stack",
   "skills": {
     "items": [
-      { "label": "JavaScript" },
-      { "label": "TypeScript" },
-      { "label": "React (Hooks)" },
-      { "label": "Next.js" },
-      { "label": "React Native" },
-      { "label": "Agents / Multi-Agents / Skills" },
-      { "label": "RAG" },
-      { "label": "MCP" },
-      { "label": "WebSocket" },
-
-      { "label": "Redux Toolkit" },
-      { "label": "Redux" },
-      { "label": "Zustand" },
-      { "label": "TanStack Query" },
-      { "label": "Axios" },
-
-      { "label": "Jest" },
-      { "label": "React Testing Library" },
-
-      { "label": "HTML5" },
-      { "label": "CSS3" },
-      { "label": "Sass" },
-      { "label": "Tailwind CSS" },
-      { "label": "Atomic Design" },
-
-      { "label": "Storybook" },
-      { "label": "Git (GitHub / GitLab)" },
-      { "label": "Scrum / Jira" }
+      {
+        "label": "JavaScript"
+      },
+      {
+        "label": "TypeScript"
+      },
+      {
+        "label": "React (Hooks)"
+      },
+      {
+        "label": "Next.js"
+      },
+      {
+        "label": "React Native"
+      },
+      {
+        "label": "Agents / Multi-Agents / Skills"
+      },
+      {
+        "label": "RAG"
+      },
+      {
+        "label": "MCP"
+      },
+      {
+        "label": "WebSocket"
+      },
+      {
+        "label": "Redux Toolkit"
+      },
+      {
+        "label": "Redux"
+      },
+      {
+        "label": "Zustand"
+      },
+      {
+        "label": "TanStack Query"
+      },
+      {
+        "label": "Axios"
+      },
+      {
+        "label": "Jest"
+      },
+      {
+        "label": "React Testing Library"
+      },
+      {
+        "label": "HTML5"
+      },
+      {
+        "label": "CSS3"
+      },
+      {
+        "label": "Sass"
+      },
+      {
+        "label": "Tailwind CSS"
+      },
+      {
+        "label": "Atomic Design"
+      },
+      {
+        "label": "Storybook"
+      },
+      {
+        "label": "Git (GitHub / GitLab)"
+      },
+      {
+        "label": "Scrum / Jira"
+      }
     ]
   },
   "experienceTitle": "Work experience",
@@ -58,7 +102,7 @@
       {
         "company": "Freelance (Self employed)",
         "role": "React / React Native / Next.js / AI Engineer | Freelance - Contractor",
-        "period": "Apr 2025 - Present · 1 yr 4 mos",
+        "period": "Apr 2025 - Present · 1 year 4 months",
         "location": "Remote",
         "summary": "Working as an independent React, React Native, Next.js and AI Engineer, collaborating with companies across fintech, crypto and digital products.",
         "highlights": [
@@ -74,7 +118,7 @@
       {
         "company": "Ripio",
         "role": "React Native Developer",
-        "period": "Apr 2022 - Jan 2025 · 2 yrs 10 mos",
+        "period": "Apr 2022 - Jan 2025 · 2 years 10 months",
         "location": "Remote",
         "summary": "Development and maintenance of Ripio mobile products and wallet initiatives.",
         "highlights": [
@@ -87,7 +131,7 @@
       {
         "company": "Reba",
         "role": "React / React Native Developer",
-        "period": "Nov 2021 - Mar 2022 · 5 mos",
+        "period": "Nov 2021 - Mar 2022 · 5 months",
         "location": "Argentina · Remote",
         "summary": "React Native development for fintech product areas.",
         "highlights": [
@@ -98,7 +142,7 @@
       {
         "company": "IOL invertironline",
         "role": "React / React Native Developer",
-        "period": "Feb 2021 - Nov 2021 · 10 mos",
+        "period": "Feb 2021 - Nov 2021 · 10 months",
         "location": "Argentina · Remote",
         "summary": "Delivered mobile and web features across internal and user-facing products.",
         "highlights": [
@@ -110,7 +154,7 @@
       {
         "company": "Claro Argentina",
         "role": "React Developer",
-        "period": "Oct 2020 - Feb 2021",
+        "period": "Oct 2020 - Feb 2021 · 5 months",
         "location": "Argentina · Remote",
         "summary": "Systems analysis and frontend development.",
         "highlights": [
@@ -120,7 +164,7 @@
       {
         "company": "UMA Health AI",
         "role": "React Developer",
-        "period": "Dec 2019 - Oct 2020",
+        "period": "Dec 2019 - Oct 2020 · 11 months",
         "location": "Argentina · Hybrid",
         "summary": "Built and maintained product requirements for health platform.",
         "highlights": [
