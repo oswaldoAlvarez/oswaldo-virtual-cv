@@ -96,7 +96,7 @@
           {
             "kind": "summary",
             "name": "BANCO EXTERIOR VENEZUELA",
-            "description": "consultoría en React, Next.js y React Native."
+            "description": "apoyo en el desarrollo de la nueva plataforma de home banking de Banco Exterior, contribuyendo sobre un proyecto existente en proceso de renovación."
           }
         ],
         "technologies": {
@@ -110,12 +110,12 @@
         "role": "React Native Developer",
         "period": "abr. 2022 - ene. 2025 · 2 años 10 meses",
         "location": "Remoto",
-        "summary": "Desarrollo y mantenimiento de productos mobile de Ripio e iniciativas de wallet.",
+        "summary": "Desarrollo y evolución de productos mobile de Ripio, con foco en wallet, operaciones crypto y componentes reutilizables.",
         "highlights": [
-          "TAG: feature para enviar y recibir crypto por TAG.",
-          "Access/Core: KYC, flujos de acceso, resolución de bugs y nuevas funcionalidades.",
-          "DesignOps: creación de Himalaya Design System como librería de componentes.",
-          "RipioTrade: implementación de 0 a 100 con integración a BitcoinTrade."
+          "TAG: desarrollo y mantenimiento de un método simplificado para enviar y recibir criptomonedas.",
+          "Access/Core: desarrollo de flujos de KYC y acceso a Wallet, resolución de bugs y evolución de funcionalidades.",
+          "Himalaya Design System: creación de una librería centralizada de componentes reutilizables para unificar la interfaz, reducir duplicación y agilizar el desarrollo.",
+          "RipioTrade: implementación end-to-end de un producto de compra, venta y swap de criptomonedas, integrado con BitcoinTrade y preparado para un alto flujo de operaciones."
         ]
       },
       {
@@ -124,10 +124,11 @@
         "role": "React / React Native Developer",
         "period": "nov. 2021 - mar. 2022 · 5 meses",
         "location": "Argentina · Remoto",
-        "summary": "Desarrollo React Native en áreas de producto fintech.",
+        "summary": "Desarrollo y optimización de productos fintech mobile, con foco en la experiencia de criptomonedas.",
         "highlights": [
-          "Creación y mantenimiento en el capítulo de Inversiones y Transacciones.",
-          "Construcción y mantenimiento del módulo crypto en la app de Reba."
+          "Crypto: desarrollo y evolución de funcionalidades para operar con criptomonedas dentro de la aplicación mobile.",
+          "Performance: refactorización y optimización de la aplicación React Native para mejorar su rendimiento y mantenibilidad.",
+          "Web: apoyo puntual en la refactorización y mejora de proyectos web."
         ]
       },
       {
@@ -136,11 +137,11 @@
         "role": "React / React Native Developer",
         "period": "feb. 2021 - nov. 2021 · 10 meses",
         "location": "Argentina · Remoto",
-        "summary": "Entrega de features mobile y web en productos internos y de usuarios.",
+        "summary": "Participación en el rebranding web de InvertirOnline y en la construcción desde cero de su nueva aplicación mobile de broker.",
         "highlights": [
-          "Creación desde cero de funcionalidades de IOL mobile con React Native.",
-          "Mantenimiento de apps internas en React y componentes reutilizables.",
-          "Gestión de requerimientos de sprint, refactors e issues con Scrum/Jira."
+          "Mobile: desarrollo desde cero de la aplicación del broker como parte del equipo mobile, utilizando React Native y Node.js.",
+          "Web/Rebranding: implementación de landing pages en HTML y CSS para presentar la nueva identidad de InvertirOnline.",
+          "Frontend: mantenimiento y refactorización de aplicaciones internas en React y creación de componentes reutilizables."
         ]
       },
       {
@@ -149,9 +150,11 @@
         "role": "React Developer",
         "period": "oct. 2020 - feb. 2021 · 5 meses",
         "location": "Argentina · Remoto",
-        "summary": "Análisis de sistemas y desarrollo frontend.",
+        "summary": "Desarrollo y evolución de un CRM interno para consultar y gestionar información de clientes.",
         "highlights": [
-          "Rol de analista de sistemas y desarrollador React."
+          "Refactoring: mejora de una aplicación React existente para aumentar su mantenibilidad y facilitar la evolución de nuevas funcionalidades.",
+          "CRM: desarrollo de vistas y flujos internos para consultar información centralizada de clientes mediante su identificador.",
+          "Análisis: relevamiento de requerimientos y resolución de incidencias en colaboración con los equipos internos."
         ]
       },
       {
@@ -160,10 +163,12 @@
         "role": "React Developer",
         "period": "dic. 2019 - oct. 2020 · 11 meses",
         "location": "Argentina · Híbrido",
-        "summary": "Desarrollo y mantenimiento de requerimientos para plataforma de salud.",
+        "summary": "Desarrollo de productos web para una plataforma de salud que conectaba pacientes con profesionales médicos.",
         "highlights": [
-          "Armado de wireframes e implementación de requerimientos.",
-          "Soporte y mantenimiento de la aplicación en producción."
+          "Landing pages: creación de wireframes e implementación de páginas para presentar el rebranding y los productos de UMA.",
+          "PWA: desarrollo de una aplicación React para conectar pacientes y médicos.",
+          "Chat en tiempo real: implementación y mantenimiento de flujos de mensajería y gestión de respuestas en tiempo real.",
+          "Soporte: resolución de incidencias de producción reportadas por médicos y pacientes."
         ]
       }
     ]

@@ -140,7 +140,7 @@
           {
             "kind": "summary",
             "name": "BANCO EXTERIOR VENEZUELA",
-            "description": "React, Next.js and React Native consulting engagement."
+            "description": "supported the development of Banco Exterior's new home banking platform, contributing to an existing project undergoing a broader renewal."
           }
         ],
         "technologies": {
@@ -154,12 +154,12 @@
         "role": "React Native Developer",
         "period": "Apr 2022 - Jan 2025 · 2 years 10 months",
         "location": "Remote",
-        "summary": "Development and maintenance of Ripio mobile products and wallet initiatives.",
+        "summary": "Developed and evolved Ripio mobile products, focusing on wallet experiences, crypto operations and reusable UI components.",
         "highlights": [
-          "TAG: receive and send crypto by tag.",
-          "Access/Core: KYC, wallet access flows, bug fixing, and feature development.",
-          "DesignOps: creation of Himalaya Design System component library.",
-          "RipioTrade: implemented from 0% to 100% with BitcoinTrade integration."
+          "TAG: developed and maintained a simplified method for sending and receiving cryptocurrencies.",
+          "Access/Core: developed KYC and Wallet access flows, resolved bugs and evolved existing features.",
+          "Himalaya Design System: created a centralized reusable component library to unify the interface, reduce duplication and streamline development.",
+          "RipioTrade: implemented an end-to-end product for buying, selling and swapping cryptocurrencies, integrating BitcoinTrade and supporting a high volume of operations."
         ]
       },
       {
@@ -168,10 +168,11 @@
         "role": "React / React Native Developer",
         "period": "Nov 2021 - Mar 2022 · 5 months",
         "location": "Argentina · Remote",
-        "summary": "React Native development for fintech product areas.",
+        "summary": "Developed and optimized mobile fintech products, focusing on the cryptocurrency experience.",
         "highlights": [
-          "Created and maintained Investment and Transactions chapter features.",
-          "Built and maintained crypto features in Reba app."
+          "Crypto: developed and evolved features for cryptocurrency operations within the mobile application.",
+          "Performance: refactored and optimized the React Native application to improve performance and maintainability.",
+          "Web: provided targeted support for refactoring and improving web projects."
         ]
       },
       {
@@ -180,11 +181,11 @@
         "role": "React / React Native Developer",
         "period": "Feb 2021 - Nov 2021 · 10 months",
         "location": "Argentina · Remote",
-        "summary": "Delivered mobile and web features across internal and user-facing products.",
+        "summary": "Contributed to InvertirOnline's web rebranding and the greenfield development of its new mobile brokerage application.",
         "highlights": [
-          "Built IOL mobile app functionalities from scratch with React Native.",
-          "Maintained React internal apps and reusable components.",
-          "Handled sprint requirements, refactors, and issue workflows with Scrum/Jira."
+          "Mobile: built the brokerage application from scratch as part of the mobile team, using React Native and Node.js.",
+          "Web/Rebranding: implemented HTML and CSS landing pages to introduce InvertirOnline's new visual identity.",
+          "Frontend: maintained and refactored internal React applications and created reusable components."
         ]
       },
       {
@@ -193,9 +194,11 @@
         "role": "React Developer",
         "period": "Oct 2020 - Feb 2021 · 5 months",
         "location": "Argentina · Remote",
-        "summary": "Systems analysis and frontend development.",
+        "summary": "Developed and evolved an internal CRM used to access and manage customer information.",
         "highlights": [
-          "Worked as systems analyst and React developer."
+          "Refactoring: improved an existing React application to increase maintainability and support the evolution of new features.",
+          "CRM: developed internal views and flows for retrieving centralized customer information through a unique identifier.",
+          "Analysis: gathered requirements and resolved issues in collaboration with internal teams."
         ]
       },
       {
@@ -204,10 +207,12 @@
         "role": "React Developer",
         "period": "Dec 2019 - Oct 2020 · 11 months",
         "location": "Argentina · Hybrid",
-        "summary": "Built and maintained product requirements for health platform.",
+        "summary": "Developed web products for a healthcare platform connecting patients with medical professionals.",
         "highlights": [
-          "Created wireframes and implemented requirements.",
-          "Provided support and maintenance for production app."
+          "Landing pages: created wireframes and implemented pages presenting UMA's rebranding and products.",
+          "PWA: developed a React application connecting patients and doctors.",
+          "Real-time chat: implemented and maintained messaging flows and real-time response handling.",
+          "Support: resolved production issues reported by doctors and patients."
         ]
       }
     ]
