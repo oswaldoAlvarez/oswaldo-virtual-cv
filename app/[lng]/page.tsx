@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import {
+  ExperienceCard,
+  type ExperienceItem,
+} from "@/components/experience-card";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { ButtonLink } from "@/components/ui/button";
@@ -14,57 +18,9 @@ type PageProps = {
   params: Promise<{ lng: string }>;
 };
 
-type ExperienceItem = {
-  company: string;
-  role: string;
-  period: string;
-  location: string;
-  summary: string;
-  highlights: string[];
-};
-
 type SkillsItem = {
   label: string;
 };
-
-const clientLabels = new Set([
-  "BITNOVO / BITSA",
-  "STABLE.IO",
-  "RECODME",
-  "BANCO EXTERIOR VENEZUELA",
-]);
-
-function formatHighlight(highlight: string) {
-  const separatorIndex = highlight.indexOf(":");
-
-  if (separatorIndex < 1) {
-    return highlight;
-  }
-
-  const label = highlight.slice(0, separatorIndex);
-  const rest = highlight.slice(separatorIndex);
-  const isShortLabel = label.length <= 42;
-  const isClientLabel = clientLabels.has(label);
-
-  if (!isShortLabel) {
-    return highlight;
-  }
-
-  return (
-    <>
-      <strong
-        className={
-          isClientLabel
-            ? "portfolio-highlight-label portfolio-client-name"
-            : "portfolio-highlight-label"
-        }
-      >
-        {isClientLabel ? <em>{label}</em> : label}
-      </strong>
-      {rest}
-    </>
-  );
-}
 
 export function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -112,6 +68,18 @@ export default async function Home({ params }: PageProps) {
     returnObjects: true,
   }) as unknown as SkillsItem[];
   const aboutParagraphs = t("landing:aboutText").split(/\n\s*\n/);
+  const renderExperienceItem = (item: ExperienceItem, index: number) => {
+    const experienceKey = `${item.company}-${item.role}`;
+    const isFeatured = index === 0;
+
+    return (
+      <ExperienceCard
+        isFeatured={isFeatured}
+        item={item}
+        key={experienceKey}
+      />
+    );
+  };
 
   return (
     <div className="portfolio-bg min-h-screen text-slate-100">
@@ -233,45 +201,7 @@ export default async function Home({ params }: PageProps) {
           <Heading as="h2" variant="section" className="mb-6">
             {t("landing:experienceTitle")}
           </Heading>
-          <div className="grid gap-4">
-            {experienceData.map((item, index) => (
-              <Card
-                key={`${item.company}-${item.role}`}
-                className={
-                  index === 0
-                    ? "portfolio-experience-card portfolio-experience-card-featured"
-                    : "portfolio-experience-card"
-                }
-              >
-                <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
-                  <div>
-                    <Heading as="h3" variant="card" className="leading-snug">
-                      {item.role}
-                    </Heading>
-                    <Text className="portfolio-company mt-2" variant="label">
-                      {item.company}
-                    </Text>
-                  </div>
-                  <Text as="span" className="portfolio-period" variant="muted">
-                    {item.period}
-                  </Text>
-                </div>
-                <Text className="mb-3" variant="muted">
-                  {item.location}
-                </Text>
-                <Text className="portfolio-experience-summary mb-4">
-                  {item.summary}
-                </Text>
-                <ul className="portfolio-highlight-list space-y-2">
-                  {item.highlights.map((highlight) => (
-                    <Text as="li" className="portfolio-highlight-item" key={highlight}>
-                      {formatHighlight(highlight)}
-                    </Text>
-                  ))}
-                </ul>
-              </Card>
-            ))}
-          </div>
+          <div className="grid gap-4">{experienceData.map(renderExperienceItem)}</div>
         </section>
 
         <section id="projects" className="mb-6">

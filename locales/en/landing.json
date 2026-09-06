@@ -100,22 +100,50 @@
   "experience": {
     "items": [
       {
+        "kind": "freelance",
         "company": "Freelance (Self employed)",
         "role": "React / React Native / Next.js / AI Engineer | Freelance - Contractor",
         "period": "Apr 2025 - Present · 1 year 4 months",
         "location": "Remote",
         "summary": "Working as an independent React, React Native, Next.js and AI Engineer, collaborating with companies across fintech, crypto and digital products.",
-        "highlights": [
+        "overview": [
           "Contribute to mobile and web applications, from greenfield projects and end-to-end feature implementation to maintenance and improvement of production applications.",
-          "Apply AI-assisted engineering workflows and explore AI-powered capabilities to accelerate development, improve problem-solving and support product experimentation.",
-          "BITNOVO / BITSA: maintaining and developing new features for Bitnovo Wallet and the main Bitsa application across both application areas.",
-          "STABLE.IO: Wallet maintenance and features for buying, selling, converting and sending cryptocurrencies; IPP greenfield MVP built from scratch with end-to-end implementation.",
-          "RECODME: contributed to building PadelPool mobile app from scratch and worked on InvertyApp's complete rebranding and new user experience.",
-          "BANCO EXTERIOR VENEZUELA: React, Next.js and React Native consulting engagement.",
-          "Main technologies: React Native, React, TypeScript, JavaScript, TanStack Query, REST APIs, Axios, Redux, Zustand, LLM, RAG, Firebase, Next.js, Git and GitHub."
-        ]
+          "Apply AI-assisted engineering workflows and explore AI-powered capabilities to accelerate development, improve problem-solving and support product experimentation."
+        ],
+        "clients": [
+          {
+            "kind": "detailed",
+            "name": "BITNOVO / BITSA / B4BIT",
+            "highlights": [
+              "Developing and shipping production features across the Bitnovo Wallet and Bitsa applications, working on different areas and user flows.",
+              "Refactoring and improving existing codebases, enhancing maintainability, resolving technical issues and evolving existing features.",
+              "Building and architecting the B4bit MVP from the ground up as a greenfield React Native application, establishing its core architecture and technical foundations.",
+              "Collaborating closely with product, design and engineering teams to deliver new features, improve existing flows and continuously enhance the overall application experience."
+            ]
+          },
+          {
+            "kind": "summary",
+            "name": "STABLE.IO",
+            "description": "Wallet maintenance and features for buying, selling, converting and sending cryptocurrencies; IPP greenfield MVP built from scratch with end-to-end implementation."
+          },
+          {
+            "kind": "summary",
+            "name": "RECODME",
+            "description": "contributed to building PadelPool mobile app from scratch and worked on InvertyApp's complete rebranding and new user experience."
+          },
+          {
+            "kind": "summary",
+            "name": "BANCO EXTERIOR VENEZUELA",
+            "description": "React, Next.js and React Native consulting engagement."
+          }
+        ],
+        "technologies": {
+          "label": "Main technologies",
+          "description": "React Native, React, TypeScript, JavaScript, TanStack Query, REST APIs, Axios, Redux, Zustand, LLM, RAG, Firebase, Next.js, Git and GitHub."
+        }
       },
       {
+        "kind": "standard",
         "company": "Ripio",
         "role": "React Native Developer",
         "period": "Apr 2022 - Jan 2025 · 2 years 10 months",
@@ -129,6 +157,7 @@
         ]
       },
       {
+        "kind": "standard",
         "company": "Reba",
         "role": "React / React Native Developer",
         "period": "Nov 2021 - Mar 2022 · 5 months",
@@ -140,6 +169,7 @@
         ]
       },
       {
+        "kind": "standard",
         "company": "IOL invertironline",
         "role": "React / React Native Developer",
         "period": "Feb 2021 - Nov 2021 · 10 months",
@@ -152,6 +182,7 @@
         ]
       },
       {
+        "kind": "standard",
         "company": "Claro Argentina",
         "role": "React Developer",
         "period": "Oct 2020 - Feb 2021 · 5 months",
@@ -162,6 +193,7 @@
         ]
       },
       {
+        "kind": "standard",
         "company": "UMA Health AI",
         "role": "React Developer",
         "period": "Dec 2019 - Oct 2020 · 11 months",
