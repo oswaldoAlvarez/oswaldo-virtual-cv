@@ -78,14 +78,20 @@
             ]
           },
           {
-            "kind": "summary",
+            "kind": "detailed",
             "name": "STABLE.IO",
-            "description": "mantenimiento de Wallet y desarrollo de funcionalidades para comprar, vender, convertir y enviar criptomonedas; IPP como MVP greenfield construido desde cero con implementación end-to-end."
+            "highlights": [
+              "Wallet: mantenimiento y desarrollo de funcionalidades para comprar, vender, convertir y enviar criptomonedas.",
+              "IPP: contribución al desarrollo de un nuevo MVP greenfield construido desde cero, implementando funcionalidades end-to-end."
+            ]
           },
           {
-            "kind": "summary",
+            "kind": "detailed",
             "name": "RECODME",
-            "description": "contribución en la construcción de PadelPool mobile app desde cero y trabajo en el rebranding completo de InvertyApp y su nueva experiencia de usuario."
+            "highlights": [
+              "PadelPool: contribución en la construcción de la aplicación mobile desde cero.",
+              "InvertyApp: trabajo en el rebranding completo de la aplicación y la implementación de su nueva experiencia de usuario."
+            ]
           },
           {
             "kind": "summary",

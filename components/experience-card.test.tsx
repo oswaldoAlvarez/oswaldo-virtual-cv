@@ -44,6 +44,12 @@ describe("ExperienceCard", () => {
 
     expect(overview.closest("li")).toBeNull();
     expect(client.closest("li")).toHaveClass("portfolio-client-item");
+    expect(client.closest("li")).toHaveTextContent(
+      "BITNOVO / BITSA / B4BIT:",
+    );
+    expect(screen.getByText("STABLE.IO").closest("li")).toHaveTextContent(
+      "STABLE.IO: Maintained the wallet.",
+    );
     expect(clientHighlight.closest("li")).toHaveClass(
       "portfolio-client-highlight-item",
     );

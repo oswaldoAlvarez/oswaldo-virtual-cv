@@ -89,7 +89,7 @@ const renderClientHighlight = (highlight: string): ReactElement => (
 
 const renderClient = (client: ExperienceClient): ReactElement => {
   const clientSummary =
-    client.kind === "summary" ? `: ${client.description}` : undefined;
+    client.kind === "summary" ? ` ${client.description}` : undefined;
   const clientHighlights =
     client.kind === "detailed" ? (
       <ul className="portfolio-client-highlight-list">
@@ -103,6 +103,7 @@ const renderClient = (client: ExperienceClient): ReactElement => {
         <strong className="portfolio-highlight-label portfolio-client-name">
           <em>{client.name}</em>
         </strong>
+        {":"}
         {clientSummary}
       </Text>
       {clientHighlights}
